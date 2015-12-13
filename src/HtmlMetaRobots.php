@@ -1,0 +1,36 @@
+<?php
+/*
+ * Copyright 2008 Sven Sanzenbacher
+ *
+ * This file is part of the naucon package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace Naucon\HtmlBuilder;
+
+use Naucon\HtmlBuilder\HtmlMetaAbstract;
+
+/**
+ * Html Meta Robots Class
+ *
+ * @package    HtmlBuilder
+ * @author     Sven Sanzenbacher
+ */
+class HtmlMetaRobots extends HtmlMetaAbstract
+{
+    /**
+     * Constructor
+     *
+     * @param       bool                    index/noindex
+     * @param       bool                    follow/nofollow
+     */
+    public function __construct($index=true, $follow=true)
+    {
+        $this->setName('robots');
+
+        $content = (($index) ? 'index' : 'noindex') . ',' . (($follow) ? 'follow' : 'nofollow');
+
+        $this->setContent($content);
+    }
+}
