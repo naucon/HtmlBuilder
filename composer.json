@@ -1,6 +1,6 @@
 {
     "name": "naucon/htmlbuilder",
-    "description": "This package provides php classes to generate html markup. His main purpose is html rendering in view helpers.",
+    "description": "A package for php to generate html markup with object representation but without the overhead of domXML or SimpelXML.",
     "keywords": ["html", "markup", "builder", "generate", "render", "create"],
     "homepage": "https://github.com/naucon/HtmlBuilder",
     "type": "library",

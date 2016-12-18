@@ -52,7 +52,7 @@ class HtmlBuilder
                 if (in_array($key, $this->_nonFilteredAttributes)) {
                     $attributes[] = $key . '="' . $value . '"';
                 } else {
-                    $value = html_entity_decode(strip_tags($value), ENT_QUOTES, 'UTF-8');
+                    $value = filter_var($value, FILTER_SANITIZE_STRING, FILTER_FLAG_ENCODE_AMP + FILTER_FLAG_ENCODE_HIGH);
                     $attributes[] = $key . '="' . $value . '"';
                 }
             }
@@ -90,9 +90,9 @@ class HtmlBuilder
         if ($htmlElement->hasChildElements()) {
             foreach ($htmlElement->getChildElementCollection() as $childElement) {
                 if ($childElement instanceof HtmlElementContent) {
-                    $output .= html_entity_decode(strip_tags($childElement->getContent()), ENT_QUOTES, 'UTF-8');
+                    $output.= filter_var($childElement->getContent(), FILTER_SANITIZE_STRING, FILTER_FLAG_ENCODE_AMP);
                 } else {
-                    $output .= $this->render($childElement);
+                    $output.= $this->render($childElement);
                 }
             }
         }

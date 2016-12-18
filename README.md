@@ -1,10 +1,9 @@
 naucon HTML Builder Package
 ===========================
-version 1.0
 
 About
 -----
-This package provides php classes to generate html markup. His main purpose is html rendering in view helpers.
+A package for php to generate html markup with object representation but without the overhead of domXML or SimpelXML. The main purpose is to render html in view helpers.
 
 ### Features
 
