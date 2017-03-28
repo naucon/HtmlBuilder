@@ -10,8 +10,8 @@
     </php>
 
     <testsuites>
-        <testsuite name="Form package testsuite">
-            <directory>./Tests/</directory>
+        <testsuite name="html builder package testsuite">
+            <directory>./tests/</directory>
         </testsuite>
     </testsuites>
 

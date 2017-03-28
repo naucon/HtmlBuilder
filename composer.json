@@ -19,5 +19,8 @@
     },
     "autoload": {
         "psr-4": {"Naucon\\HtmlBuilder\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"Naucon\\HtmlBuilder\\Tests\\": "tests"}
     }
 }
