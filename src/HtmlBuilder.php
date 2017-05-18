@@ -23,6 +23,14 @@ class HtmlBuilder
 {
     /**
      * @access      protected
+     * @var         array                   elements require end tag
+     */
+    protected $_elementsRequireEndTag = array(
+        'select',
+    );
+
+    /**
+     * @access      protected
      * @var         array                   black list of attributes witch are not filtered
      */
     protected $_nonFilteredAttributes = array('onclick',
@@ -73,6 +81,9 @@ class HtmlBuilder
         if ($htmlElement->hasChildElements()) {
             $output .= '>';
             $output.= $this->renderContent($htmlElement);
+            $output.= '</' . $htmlElement->getTag() . '>';
+        } elseif (in_array($htmlElement->getTag(), $this->_elementsRequireEndTag)) {
+            $output.= '>';
             $output .= '</' . $htmlElement->getTag() . '>';
         } else {
             $output .= ' />';

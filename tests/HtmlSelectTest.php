@@ -24,19 +24,19 @@ class HtmlSelectTest extends \PHPUnit_Framework_TestCase
         $name = 'foo';
 
         $htmlElementObject = new HtmlSelect($name);
-        $this->assertEquals('<select name="' . $name . '" />', $htmlBuilder->render($htmlElementObject));
+        $this->assertEquals('<select name="' . $name . '"></select>', $htmlBuilder->render($htmlElementObject));
 
         $name = 'foo';
         $multiple = true;
 
         $htmlElementObject = new HtmlSelect($name, $multiple);
-        $this->assertEquals('<select name="' . $name . '" multiple="multiple" />', $htmlBuilder->render($htmlElementObject));
+        $this->assertEquals('<select name="' . $name . '" multiple="multiple"></select>', $htmlBuilder->render($htmlElementObject));
 
         $name = 'foo';
         $multiple = false;
 
         $htmlElementObject = new HtmlSelect($name, $multiple);
-        $this->assertEquals('<select name="' . $name . '" />', $htmlBuilder->render($htmlElementObject));
+        $this->assertEquals('<select name="' . $name . '"></select>', $htmlBuilder->render($htmlElementObject));
     }
 
     /**
@@ -83,7 +83,7 @@ class HtmlSelectTest extends \PHPUnit_Framework_TestCase
 
         $htmlElementObject = new HtmlSelect($name);
         $htmlElementObject->setId('testId');
-        $this->assertEquals('<select name="' . $name . '" id="testId" />', $htmlBuilder->render($htmlElementObject));
+        $this->assertEquals('<select name="' . $name . '" id="testId"></select>', $htmlBuilder->render($htmlElementObject));
     }
 
     /**
@@ -97,6 +97,6 @@ class HtmlSelectTest extends \PHPUnit_Framework_TestCase
 
         $htmlElementObject = new HtmlSelect($name);
         $htmlElementObject->setClass('testClass');
-        $this->assertEquals('<select name="' . $name . '" class="testClass" />', $htmlBuilder->render($htmlElementObject));
+        $this->assertEquals('<select name="' . $name . '" class="testClass"></select>', $htmlBuilder->render($htmlElementObject));
     }
 }
