@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Abtract Html Table Row Class
  *
@@ -29,7 +27,7 @@ abstract class HtmlTableRowAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute align (left, center, right, justify, char)
+     * @param       bool        $align      html element attribute align (left, center, right, justify, char)
      * @return      HtmlTableRowAbstract
      */
     public function setAlign($align)
@@ -68,7 +66,7 @@ abstract class HtmlTableRowAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute valign (top, middle, bottom, baseline)
+     * @param       bool        $align      html element attribute valign (top, middle, bottom, baseline)
      * @return      HtmlTableRowAbstract
      */
     public function setValign($align)

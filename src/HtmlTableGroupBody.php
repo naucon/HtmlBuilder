@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlTableGroupAbstract;
-
 /**
  * Html Table Group Body Class
  *

@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Html Element Universal Class
  *
@@ -22,10 +20,10 @@ class HtmlElementUniversal extends HtmlElementUniversalAbstract
     /**
      * Constructor
      *
-     * @param       string                  html element tag
-     * @param       string                  optional html element content
+     * @param       string      $tag        html element tag
+     * @param       string      $content    optional html element content
      */
-    public function __construct($tag, $content=null)
+    public function __construct($tag, $content = null)
     {
         $this->tag = $tag;
         $this->setContent($content);

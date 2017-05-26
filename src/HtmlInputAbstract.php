@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Abstract Html Input Class
  *
@@ -37,7 +35,7 @@ abstract class HtmlInputAbstract extends HtmlElementUniversalAbstract
 
     /**
      * @access      protected
-     * @param       string                  html element attribute type
+     * @param       string      $type       html element attribute type
      * @return      HtmlInputAbstract
      */
     protected function setType($type)
@@ -55,7 +53,7 @@ abstract class HtmlInputAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute name
+     * @param       string      $name       html element attribute name
      * @return      HtmlInputAbstract
      */
     public function setName($name)
@@ -73,7 +71,7 @@ abstract class HtmlInputAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute value
+     * @param       string      $value      html element attribute value
      * @return      HtmlInputAbstract
      */
     public function setValue($value)
@@ -91,7 +89,7 @@ abstract class HtmlInputAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       int                     html element attribute tabindex
+     * @param       int         $tabIndex   html element attribute tabindex
      * @return      HtmlInputAbstract
      */
     public function setTabIndex($tabIndex)
@@ -112,7 +110,7 @@ abstract class HtmlInputAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute disabled
+     * @param       bool        $disabled   html element attribute disabled
      * @return      HtmlInputAbstract
      */
     public function setDisabled($disabled)
@@ -137,7 +135,7 @@ abstract class HtmlInputAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute readonly
+     * @param       bool        $readonly   html element attribute readonly
      * @return      HtmlInputAbstract
      */
     public function setReadonly($readonly)
@@ -159,7 +157,7 @@ abstract class HtmlInputAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onblur
+     * @param       string      $event      html element attribute onblur
      * @return      HtmlInputAbstract
      */
     public function setOnBlur($event)
@@ -177,7 +175,7 @@ abstract class HtmlInputAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onchange
+     * @param       string      $event      html element attribute onchange
      * @return      HtmlInputAbstract
      */
     public function setOnChange($event)
@@ -195,7 +193,7 @@ abstract class HtmlInputAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onfocus
+     * @param       string      $event      html element attribute onfocus
      * @return      HtmlInputAbstract
      */
     public function setOnFocus($event)

@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlInputAbstract;
-
 /**
  * Html Input File Class
  *
@@ -22,11 +20,11 @@ class HtmlInputFile extends HtmlInputAbstract
     /**
      * Constructor
      *
-     * @param       string                  input name
-     * @param       string                  input value
-     * @param       string                  input accept
+     * @param       string      $name       input name
+     * @param       string      $value      input value
+     * @param       string      $accept     input accept
      */
-    public function __construct($name, $value, $accept=null)
+    public function __construct($name, $value, $accept = null)
     {
         $this->setType('file');
 
@@ -45,7 +43,7 @@ class HtmlInputFile extends HtmlInputAbstract
     }
 
     /**
-     * @param       string                  html element attribute accept (mime-type eg. "text/*")
+     * @param       string      $accept     html element attribute accept (mime-type eg. "text/*")
      * @return      HtmlInputFile
      */
     public function setAccept($accept)
@@ -63,7 +61,7 @@ class HtmlInputFile extends HtmlInputAbstract
     }
 
     /**
-     * @param       int                     html element attribute size
+     * @param       int         $size       html element attribute size
      * @return      HtmlInputFile
      */
     public function setSize($size)
@@ -81,7 +79,7 @@ class HtmlInputFile extends HtmlInputAbstract
     }
 
     /**
-     * @param       int                     html element attribute maxlength (max file size in bytes)
+     * @param       int         $length     html element attribute maxlength (max file size in bytes)
      * @return      HtmlInputFile
      */
     public function setMaxLength($length)
@@ -106,10 +104,10 @@ class HtmlInputFile extends HtmlInputAbstract
     }
 
     /**
-     * @param       bool                    html element attribute autocomplete
+     * @param       bool    $autocomplete   html element attribute autocomplete
      * @return      HtmlInputFile
      */
-    public function setAutoComplete($autocomplete=true)
+    public function setAutoComplete($autocomplete = true)
     {
         if (is_null($autocomplete)) {
             $this->setAttribute('autocomplete', null);

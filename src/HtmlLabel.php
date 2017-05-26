@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Html Label Class
  *
@@ -29,10 +27,10 @@ class HtmlLabel extends HtmlElementUniversalAbstract
     /**
      * Constructor
      *
-     * @param       string                  label content
-     * @param       string                  label attribute for
+     * @param       string      $content    label content
+     * @param       string      $for        label attribute for
      */
-    public function __construct($content, $for=null)
+    public function __construct($content, $for = null)
     {
         $this->setContent($content);
         $this->setFor($for);
@@ -48,7 +46,7 @@ class HtmlLabel extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute for
+     * @param       string      $for        html element attribute for
      * @return      HtmlLabel
      */
     public function setFor($for)
@@ -66,7 +64,7 @@ class HtmlLabel extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onblur
+     * @param       string      $event      html element attribute onblur
      * @return      HtmlLabel
      */
     public function setOnBlur($event)
@@ -84,7 +82,7 @@ class HtmlLabel extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onfocus
+     * @param       string      $event      html element attribute onfocus
      * @return      HtmlLabel
      */
     public function setOnFocus($event)

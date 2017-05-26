@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlInputAbstract;
-
 /**
  * Html Input Image Class
  *
@@ -22,11 +20,10 @@ class HtmlInputImage extends HtmlInputAbstract
     /**
      * Constructor
      *
-     * @param       string                  input src
-     * @param       string                  input alt
-     * @param       string                  input name
+     * @param       string      $src        input src
+     * @param       string      $alt        input alt
      */
-    public function __construct($src, $alt=null)
+    public function __construct($src, $alt = null)
     {
         $this->setType('image');
 
@@ -44,7 +41,7 @@ class HtmlInputImage extends HtmlInputAbstract
     }
 
     /**
-     * @param       string                  html element attribute src
+     * @param       string      $src        html element attribute src
      * @return      HtmlInputImage
      */
     public function setSrc($src)
@@ -62,7 +59,7 @@ class HtmlInputImage extends HtmlInputAbstract
     }
 
     /**
-     * @param       string                  html element attribute alt
+     * @param       string      $alt        html element attribute alt
      * @return      HtmlInputImage
      */
     public function setAlt($alt)
@@ -80,7 +77,7 @@ class HtmlInputImage extends HtmlInputAbstract
     }
 
     /**
-     * @param       string                  html element attribute width
+     * @param       string      $width      html element attribute width
      * @return      HtmlInputImage
      */
     public function setWidth($width)
@@ -102,7 +99,7 @@ class HtmlInputImage extends HtmlInputAbstract
     }
 
     /**
-     * @param       string                  html element attribute height
+     * @param       string      $height     html element attribute height
      * @return      HtmlInputImage
      */
     public function setHeight($height)

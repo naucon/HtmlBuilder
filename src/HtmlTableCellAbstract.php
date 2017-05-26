@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Abtract Html Table Cell Class
  *
@@ -29,7 +27,7 @@ abstract class HtmlTableCellAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute align (left, center, right, justify, char)
+     * @param       bool        $align      html element attribute align (left, center, right, justify, char)
      * @return      HtmlTableCellAbstract
      */
     public function setAlign($align)
@@ -68,7 +66,7 @@ abstract class HtmlTableCellAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute colspan (number of column cells to span)
+     * @param       string      $cells      html element attribute colspan (number of column cells to span)
      * @return      HtmlTableCellAbstract
      */
     public function setColSpan($cells)
@@ -86,7 +84,7 @@ abstract class HtmlTableCellAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute rowspan (number of row cells to span)
+     * @param       string      $cells      html element attribute rowspan (number of row cells to span)
      * @return      HtmlTableCellAbstract
      */
     public function setRowSpan($cells)
@@ -104,7 +102,7 @@ abstract class HtmlTableCellAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute valign (top, middle, bottom, baseline)
+     * @param       bool        $align      html element attribute valign (top, middle, bottom, baseline)
      * @return      HtmlTableCellAbstract
      */
     public function setValign($align)
@@ -140,7 +138,7 @@ abstract class HtmlTableCellAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute width in pixel or percent
+     * @param       string      $width      html element attribute width in pixel or percent
      * @return      HtmlTableCellAbstract
      */
     public function setWidth($width)
@@ -158,7 +156,7 @@ abstract class HtmlTableCellAbstract extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute height in pixel or percent
+     * @param       string      $height     html element attribute height in pixel or percent
      * @return      HtmlTableCellAbstract
      */
     public function setHeight($height)

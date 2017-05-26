@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlListAbstract;
-
 /**
  * Html Ordered List Class
  *
@@ -35,7 +33,7 @@ class HtmlListOrdered extends HtmlListAbstract
     }
 
     /**
-     * @param       string                  html element attribute type - type of list e.g. 1, A, a, I, i
+     * @param       string      $type       html element attribute type - type of list e.g. 1, A, a, I, i
      * @return      HtmlListOrdered
      */
     public function setType($type)
@@ -53,7 +51,7 @@ class HtmlListOrdered extends HtmlListAbstract
     }
 
     /**
-     * @param       string                  html element attribute start - start value of ordered list
+     * @param       string      $start      html element attribute start - start value of ordered list
      * @return      HtmlListOrdered
      */
     public function setStart($start)
@@ -74,7 +72,7 @@ class HtmlListOrdered extends HtmlListAbstract
     }
 
     /**
-     * @param       bool                  html element attribute reversed - descending list order e.g. 9,8,7,... (since HTML5)
+     * @param       bool    $reversed       html element attribute reversed - descending list order e.g. 9,8,7,... (since HTML5)
      * @return      HtmlListOrdered
      */
     public function setReversed($reversed)

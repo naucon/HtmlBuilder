@@ -10,7 +10,6 @@
 namespace Naucon\HtmlBuilder;
 
 use Naucon\HtmlBuilder\Exception\HtmlElementException;
-use Naucon\HtmlBuilder\HtmlElementAbstract;
 
 /**
  * Abstract Html Meta Class
@@ -37,7 +36,7 @@ abstract class HtmlMetaAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute name
+     * @param       string      $name       html element attribute name
      * @return      HtmlMetaAbstract
      */
     public function setName($name)
@@ -55,7 +54,7 @@ abstract class HtmlMetaAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute content
+     * @param       string      $content    html element attribute content
      * @return      HtmlMetaAbstract
      */
     public function setContent($content)
@@ -67,12 +66,11 @@ abstract class HtmlMetaAbstract extends HtmlElementAbstract
     /**
      * add html element content
      *
-     * @param       string                  html element content
-     * @return      HtmlMetaAbstract
+     * @param       string      $content    html element content
+     * @throws      HtmlElementException
      */
-    public function addContent($content=null)
+    public function addContent($content = null)
     {
         throw new HtmlElementException('meta content can not be added', E_NOTICE);
-        return $this;
     }
 }

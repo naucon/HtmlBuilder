@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlListAbstract;
-
 /**
  * Html Unordered List Class
  *

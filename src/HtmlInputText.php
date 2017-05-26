@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlInputAbstract;
-
 /**
  * Html Input Text Class
  *
@@ -22,8 +20,8 @@ class HtmlInputText extends HtmlInputAbstract
     /**
      * Constructor
      *
-     * @param       string                  input name
-     * @param       string                  input value
+     * @param       string      $name       input name
+     * @param       string      $value      input value
      */
     public function __construct($name, $value)
     {
@@ -43,7 +41,7 @@ class HtmlInputText extends HtmlInputAbstract
     }
 
     /**
-     * @param       int                     html element attribute size
+     * @param       int         $size       html element attribute size
      * @return      HtmlInputText
      */
     public function setSize($size)
@@ -61,7 +59,7 @@ class HtmlInputText extends HtmlInputAbstract
     }
 
     /**
-     * @param       int                     html element attribute maxlength
+     * @param       int         $length     html element attribute maxlength
      * @return      HtmlInputText
      */
     public function setMaxLength($length)
@@ -86,10 +84,10 @@ class HtmlInputText extends HtmlInputAbstract
     }
 
     /**
-     * @param       bool                    html element attribute autocomplete
+     * @param       bool    $autocomplete   html element attribute autocomplete
      * @return      HtmlInputText
      */
-    public function setAutoComplete($autocomplete=true)
+    public function setAutoComplete($autocomplete = true)
     {
         if (is_null($autocomplete)) {
             $this->setAttribute('autocomplete', null);

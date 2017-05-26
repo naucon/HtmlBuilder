@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Html Paragraph Class
  *
@@ -21,16 +19,16 @@ class HtmlParagraph extends HtmlElementUniversalAbstract
 {
     /**
      * @access      protected
-     * @var         string                  html element tag
+     * @var         string                      html element tag
      */
     protected $tag = 'p';
 
     /**
      * Constructor
      *
-     * @param       string                  html element content
+     * @param       string      $content        html element content
      */
-    public function __construct($content=null)
+    public function __construct($content = null)
     {
         $this->setContent($content);
     }

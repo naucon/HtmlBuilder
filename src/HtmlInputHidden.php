@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlInputAbstract;
-
 /**
  * Html Input Hidden Class
  *
@@ -22,10 +20,10 @@ class HtmlInputHidden extends HtmlInputAbstract
     /**
      * Constructor
      *
-     * @param       string                  input name
-     * @param       string                  input value
+     * @param       string      $name       input name
+     * @param       string      $value      input value
      */
-    public function __construct($name, $value=null)
+    public function __construct($name, $value = null)
     {
         $this->setType('hidden');
 

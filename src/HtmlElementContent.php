@@ -28,7 +28,7 @@ class HtmlElementContent
     /**
      * Contructor
      *
-     * @param       string                  html element content
+     * @param       string      $content    html element content
      */
     public function __construct($content)
     {
@@ -46,7 +46,7 @@ class HtmlElementContent
     }
 
     /**
-     * @param       string                  html element content
+     * @param       string      $content    html element content
      * @return      HtmlElementContent
      */
     public function setContent($content)

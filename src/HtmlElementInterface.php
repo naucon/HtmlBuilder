@@ -9,6 +9,8 @@
  */
 namespace Naucon\HtmlBuilder;
 
+use Naucon\Utility\Collection;
+
 /**
  * Html Element Interface
  *
@@ -33,19 +35,19 @@ interface HtmlElementInterface
     public function hasAttributes();
 
     /**
-     * @param       array               html element attributes with key-value-pairs
+     * @param       array       $attributes     html element attributes with key-value-pairs
      * @return      HtmlElementInterface
      */
     public function setAttributes(array $attributes);
 
     /**
-     * @param       string              html element attribute key
+     * @param       string      $key    html element attribute key
      * @return      string              html element attribute value
      */
     public function getAttribute($key);
 
     /**
-     * @param       string              html element attribute key
+     * @param       string      $key    html element attribute key
      * @return      bool                html element has attribute for given key
      */
     public function hasAttribute($key);
@@ -53,21 +55,21 @@ interface HtmlElementInterface
     /**
      * set attribute to html element
      *
-     * @param       string              html element attribute key
-     * @param       string              html element attribute value
+     * @param       string      $key    html element attribute key
+     * @param       string      $value  html element attribute value
      * @return      HtmlElementInterface
      */
-    public function setAttribute($key, $value=null);
+    public function setAttribute($key, $value = null);
 
     /**
      * append attribute to html element
      *
-     * @param       string              html element attribute key
-     * @param       string              html element attribute value
-     * @param       string              html element attribute seperater
+     * @param       string      $key        html element attribute key
+     * @param       string      $value      html element attribute value
+     * @param       string      $seperater  html element attribute seperater
      * @return      HtmlElementInterface
      */
-    public function appendAttribute($key, $value=null, $seperater=null);
+    public function appendAttribute($key, $value = null, $seperater = null);
 
     /**
      * @return      array               html child elements
@@ -80,7 +82,12 @@ interface HtmlElementInterface
     public function hasChildElements();
 
     /**
-     * @param       array               html child elements
+     * @return      Collection
+     */
+    public function getChildElementCollection();
+
+    /**
+     * @param       array       $elements       html child elements
      * @return      HtmlElementInterface
      */
     public function setChildElements(array $elements);
@@ -88,7 +95,7 @@ interface HtmlElementInterface
     /**
      * add html element as child element
      *
-     * @param       HtmlElementInterface
+     * @param       HtmlElementInterface        $element
      * @return      HtmlElementInterface
      */
     public function addChildElement(HtmlElementInterface $element);
@@ -96,7 +103,7 @@ interface HtmlElementInterface
     /**
      * set html element content, replace all child elements
      *
-     * @param       string              html element content
+     * @param       string      $content        html element content
      * @return      HtmlElementInterface
      */
     public function setContent($content);
@@ -104,7 +111,7 @@ interface HtmlElementInterface
     /**
      * add html element content
      *
-     * @param       string              html element content
+     * @param       string      $content        html element content
      * @return      HtmlElementInterface
      */
     public function addContent($content);

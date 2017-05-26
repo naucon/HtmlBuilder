@@ -9,13 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-use Naucon\HtmlBuilder\HtmlTableRow;
-use Naucon\HtmlBuilder\HtmlTableGroupAbstract;
-use Naucon\HtmlBuilder\HtmlTableGroupHeader;
-use Naucon\HtmlBuilder\HtmlTableGroupBody;
-use Naucon\HtmlBuilder\HtmlTableGroupFooter;
-
 /**
  * Html Table Class
  *
@@ -47,7 +40,7 @@ class HtmlTable extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute align (left, center, right)
+     * @param       bool        $align      html element attribute align (left, center, right)
      * @return      HtmlTable
      */
     public function setAlign($align)
@@ -80,7 +73,7 @@ class HtmlTable extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute border
+     * @param       bool        $border     html element attribute border
      * @return      HtmlTable
      */
     public function setBorder($border)
@@ -103,7 +96,7 @@ class HtmlTable extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       int                     html element attribute cellpadding in pixel
+     * @param       int     $padding        html element attribute cellpadding in pixel
      * @return      HtmlTable
      */
     public function setCellPadding($padding)
@@ -121,7 +114,7 @@ class HtmlTable extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       int                     html element attribute cellspacing in pixel
+     * @param       int     $padding        html element attribute cellspacing in pixel
      * @return      HtmlTable
      */
     public function setCellSpacing($padding)
@@ -139,7 +132,7 @@ class HtmlTable extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute width in pixel or percent
+     * @param       string      $width      html element attribute width in pixel or percent
      * @return      HtmlTable
      */
     public function setWidth($width)
@@ -199,7 +192,7 @@ class HtmlTable extends HtmlElementUniversalAbstract
     /**
      * add table group
      *
-     * @param       HtmlTableGroupAbstract
+     * @param       HtmlTableGroupAbstract      $tableGroup
      * @return      HtmlTable
      */
     public function addGroup(HtmlTableGroupAbstract $tableGroup)

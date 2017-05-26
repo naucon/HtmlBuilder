@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Html List Item Class
  *
@@ -29,10 +27,10 @@ class HtmlListItem extends HtmlElementUniversalAbstract
     /**
      * Constructor
      *
-     * @param       string                  list item content
-     * @param       string                  list item attribute value
+     * @param       string      $content        list item content
+     * @param       string      $value          list item attribute value
      */
-    public function __construct($content, $value=null)
+    public function __construct($content, $value = null)
     {
         $this->setContent($content);
         $this->setValue($value);
@@ -48,7 +46,7 @@ class HtmlListItem extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute value
+     * @param       string      $value      html element attribute value
      * @return      HtmlListItem
      */
     public function setValue($value)

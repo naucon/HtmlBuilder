@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Html Form Class
  *
@@ -29,11 +27,11 @@ class HtmlForm extends HtmlElementUniversalAbstract
     /**
      * Constructor
      *
-     * @param       string                  html element attribute method
-     * @param       string                  html element attribute action
-     * @param       string                  html element attribute enctype e.g. "multipart/form-data"
+     * @param       string      $method     html element attribute method
+     * @param       string      $action     html element attribute action
+     * @param       string      $enctype    html element attribute enctype e.g. "multipart/form-data"
      */
-    public function __construct($method='post', $action=null, $enctype=null)
+    public function __construct($method = 'post', $action = null, $enctype = null)
     {
         $this->setMethod($method);
         $this->setAction($action);
@@ -50,7 +48,7 @@ class HtmlForm extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute action
+     * @param       string      $action     html element attribute action
      * @return      HtmlForm
      */
     public function setAction($action)
@@ -68,7 +66,7 @@ class HtmlForm extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute method eg. get, post
+     * @param       string      $method     html element attribute method eg. get, post
      * @return      HtmlForm
      */
     public function setMethod($method)
@@ -86,7 +84,7 @@ class HtmlForm extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute target
+     * @param       string      $target     html element attribute target
      * @return      HtmlForm
      */
     public function setTarget($target)
@@ -104,7 +102,7 @@ class HtmlForm extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute name
+     * @param       string      $name       html element attribute name
      * @return      HtmlForm
      */
     public function setName($name)
@@ -122,7 +120,7 @@ class HtmlForm extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute enctype e.g. "multipart/form-data"
+     * @param       string      $enctype    html element attribute enctype e.g. "multipart/form-data"
      * @return      HtmlForm
      */
     public function setEnctype($enctype)
@@ -140,7 +138,7 @@ class HtmlForm extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       int                     html element attribute accept
+     * @param       int     $accept         html element attribute accept
      * @return      HtmlForm
      */
     public function setAccept($accept)
@@ -158,7 +156,7 @@ class HtmlForm extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute accept-charset
+     * @param       string      $charset    html element attribute accept-charset
      * @return      HtmlForm
      */
     public function setAcceptCharset($charset)
@@ -183,10 +181,10 @@ class HtmlForm extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute autocomplete
+     * @param       bool        $autocomplete   html element attribute autocomplete
      * @return      HtmlForm
      */
-    public function setAutoComplete($autocomplete=true)
+    public function setAutoComplete($autocomplete = true)
     {
         if (is_null($autocomplete)) {
             $this->setAttribute('autocomplete', null);
@@ -207,7 +205,7 @@ class HtmlForm extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onreset
+     * @param       string      $event      html element attribute onreset
      * @return      HtmlForm
      */
     public function setOnReset($event)
@@ -225,7 +223,7 @@ class HtmlForm extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onsubmit
+     * @param       string      $event      html element attribute onsubmit
      * @return      HtmlForm
      */
     public function setOnSubmit($event)

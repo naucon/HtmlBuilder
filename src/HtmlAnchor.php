@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Html Anchor Class
  *
@@ -29,11 +27,11 @@ class HtmlAnchor extends HtmlElementUniversalAbstract
     /**
      * Constructor
      *
-     * @param       string                  html element attribute href
-     * @param       string                  html element content
-     * @param       string                  html element attribute target
+     * @param       string      $href           html element attribute href
+     * @param       string      $content        html element content
+     * @param       string      $target         html element attribute target
      */
-    public function __construct($href, $content=null, $target=null)
+    public function __construct($href, $content = null, $target = null)
     {
         $this->setHref($href);
         $this->setContent($content);
@@ -50,7 +48,7 @@ class HtmlAnchor extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute href
+     * @param       string      $href       html element attribute href
      * @return      HtmlAnchor
      */
     public function setHref($href)
@@ -68,7 +66,7 @@ class HtmlAnchor extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute target
+     * @param       string      $target     html element attribute target
      * @return      HtmlAnchor
      */
     public function setTarget($target)
@@ -86,7 +84,7 @@ class HtmlAnchor extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute name
+     * @param       string      $name       html element attribute name
      * @return      HtmlAnchor
      */
     public function setName($name)
@@ -104,7 +102,7 @@ class HtmlAnchor extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onblur
+     * @param       string      $event      html element attribute onblur
      * @return      HtmlAnchor
      */
     public function setOnBlur($event)
@@ -122,7 +120,7 @@ class HtmlAnchor extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onfocus
+     * @param       string      $event      html element attribute onfocus
      * @return      HtmlAnchor
      */
     public function setOnFocus($event)

@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlMetaAbstract;
-
 /**
  * Html Meta Robots Class
  *
@@ -22,10 +20,10 @@ class HtmlMetaRobots extends HtmlMetaAbstract
     /**
      * Constructor
      *
-     * @param       bool                    index/noindex
-     * @param       bool                    follow/nofollow
+     * @param       bool        $index      index/noindex
+     * @param       bool        $follow     follow/nofollow
      */
-    public function __construct($index=true, $follow=true)
+    public function __construct($index = true, $follow = true)
     {
         $this->setName('robots');
 

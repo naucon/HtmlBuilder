@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlMetaAbstract;
-
 /**
  * Html Meta Keywords Class
  *
@@ -22,7 +20,7 @@ class HtmlMetaKeywords extends HtmlMetaAbstract
     /**
      * Constructor
      *
-     * @param       string                  meta content
+     * @param       string      $content        meta content
      */
     public function __construct($content)
     {
@@ -31,7 +29,7 @@ class HtmlMetaKeywords extends HtmlMetaAbstract
     }
 
     /**
-     * @param       mixed                   html element attribute content
+     * @param       mixed       $content        html element attribute content
      * @return      HtmlMetaKeywords
      */
     public function setContent($content)

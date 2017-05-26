@@ -9,9 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-use Naucon\HtmlBuilder\HtmlListItem;
-
 /**
  * Abstract Html List Class
  *
@@ -24,11 +21,11 @@ abstract class HtmlListAbstract extends HtmlElementUniversalAbstract
     /**
      * add select option
      *
-     * @param       string                  list item content
-     * @param       string                  list item attribute value
+     * @param       string      $content    list item content
+     * @param       string      $value      list item attribute value
      * @return      HtmlListAbstract
      */
-    public function addItem($content, $value=null)
+    public function addItem($content, $value = null)
     {
         $this->addChildElement(new HtmlListItem($content, $value));
         return $this;

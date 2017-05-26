@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlInputAbstract;
-
 /**
  * Html Input checkbox Class
  *
@@ -22,11 +20,11 @@ class HtmlInputCheckbox extends HtmlInputAbstract
     /**
      * Constructor
      *
-     * @param       string                  input name
-     * @param       string                  input value
-     * @param       bool                    input checked
+     * @param       string      $name       input name
+     * @param       string      $value      input value
+     * @param       bool        $checked    input checked
      */
-    public function __construct($name, $value, $checked=false)
+    public function __construct($name, $value, $checked = false)
     {
         $this->setType('checkbox');
 
@@ -48,7 +46,7 @@ class HtmlInputCheckbox extends HtmlInputAbstract
     }
 
     /**
-     * @param       bool                    html element attribute checked
+     * @param       bool        $checked    html element attribute checked
      * @return      HtmlInputCheckbox
      */
     public function setChecked($checked)
@@ -77,10 +75,10 @@ class HtmlInputCheckbox extends HtmlInputAbstract
     }
 
     /**
-     * @param       bool                    html element attribute autocomplete
+     * @param       bool    $autocomplete   html element attribute autocomplete
      * @return      HtmlInputCheckbox
      */
-    public function setAutoComplete($autocomplete=true)
+    public function setAutoComplete($autocomplete = true)
     {
         if (is_null($autocomplete)) {
             $this->setAttribute('autocomplete', null);

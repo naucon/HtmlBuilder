@@ -9,10 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementInterface;
-use Naucon\HtmlBuilder\HtmlElementContent;
-use Naucon\HtmlBuilder\Exception\HtmlBuilderException;
-
 /**
  * Html Builder Class
  *
@@ -47,7 +43,7 @@ class HtmlBuilder
 
     /**
      * @access      protected
-     * @param       HtmlElementInterface
+     * @param       HtmlElementInterface        $htmlElement
      * @return      string
      */
     protected function renderAttributes(HtmlElementInterface $htmlElement)
@@ -70,7 +66,7 @@ class HtmlBuilder
     }
 
     /**
-     * @param       HtmlElementInterface
+     * @param       HtmlElementInterface        $htmlElement
      * @return      string                  html output
      */
     public function render(HtmlElementInterface $htmlElement)
@@ -92,7 +88,7 @@ class HtmlBuilder
     }
 
     /**
-     * @param       HtmlElementInterface
+     * @param       HtmlElementInterface        $htmlElement
      * @return      string                  html output
      */
     public function renderContent(HtmlElementInterface $htmlElement)
@@ -111,7 +107,7 @@ class HtmlBuilder
     }
 
     /**
-     * @param       HtmlElementInterface
+     * @param       HtmlElementInterface        $htmlElement
      * @return      string                  html output
      */
     public function renderStartTag(HtmlElementInterface $htmlElement)
@@ -123,7 +119,7 @@ class HtmlBuilder
     }
 
     /**
-     * @param       HtmlElementInterface
+     * @param       HtmlElementInterface        $htmlElement
      * @return      string                  html output
      */
     public function renderEndTag(HtmlElementInterface $htmlElement)

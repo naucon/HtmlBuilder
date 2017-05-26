@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementAbstract;
-
 /**
  * Html Element Universal Abstract Class
  *
@@ -29,7 +27,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute id
+     * @param       string      $id         html element attribute id
      * @return      HtmlElementUniversalAbstract
      */
     public function setId($id)
@@ -47,7 +45,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute class
+     * @param       string      $class      html element attribute class
      * @return      HtmlElementUniversalAbstract
      */
     public function setClass($class)
@@ -65,7 +63,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute style
+     * @param       string      $style      html element attribute style
      * @return      HtmlElementUniversalAbstract
      */
     public function setStyle($style)
@@ -83,7 +81,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute title
+     * @param       string      $title      html element attribute title
      * @return      HtmlElementUniversalAbstract
      */
     public function setTitle($title)
@@ -101,7 +99,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute onclick
+     * @param       string      $event      html element attribute onclick
      * @return      HtmlElementUniversalAbstract
      */
     public function setOnClick($event)
@@ -119,7 +117,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute ondblclick
+     * @param       string      $event      html element attribute ondblclick
      * @return      HtmlElementUniversalAbstract
      */
     public function setOnDoubleClick($event)
@@ -137,7 +135,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute onmousedown
+     * @param       string      $event      html element attribute onmousedown
      * @return      HtmlElementUniversalAbstract
      */
     public function setOnMouseDown($event)
@@ -155,7 +153,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute onmouseup
+     * @param       string      $event      html element attribute onmouseup
      * @return      HtmlElementUniversalAbstract
      */
     public function setOnMouseUp($event)
@@ -173,7 +171,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute onmouseover
+     * @param       string      $event      html element attribute onmouseover
      * @return      HtmlElementUniversalAbstract
      */
     public function setOnMouseOver($event)
@@ -191,7 +189,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute onmousemove
+     * @param       string      $event      html element attribute onmousemove
      * @return      HtmlElementUniversalAbstract
      */
     public function setOnMouseMove($event)
@@ -209,7 +207,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute onmouseout
+     * @param       string      $event      html element attribute onmouseout
      * @return      HtmlElementUniversalAbstract
      */
     public function setOnMouseOut($event)
@@ -227,7 +225,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute onkeypress
+     * @param       string      $event      html element attribute onkeypress
      * @return      HtmlElementUniversalAbstract
      */
     public function setOnKeyPress($event)
@@ -245,7 +243,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute onkeydown
+     * @param       string      $event      html element attribute onkeydown
      * @return      HtmlElementUniversalAbstract
      */
     public function setOnKeyDown($event)
@@ -263,7 +261,7 @@ abstract class HtmlElementUniversalAbstract extends HtmlElementAbstract
     }
 
     /**
-     * @param       string                  html element attribute onkeyup
+     * @param       string      $event      html element attribute onkeyup
      * @return      HtmlElementUniversalAbstract
      */
     public function setOnKeyUp($event)

@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlFilterInterface;
-
 /**
  * Filter Class
  * converts special characters into html entities
@@ -23,8 +21,8 @@ class HtmlFilterHtmlEntity implements HtmlFilterInterface
     /**
      * filter
      *
-     * @param     mixed             unfiltered value
-     * @return    mixed             filtered value
+     * @param     mixed     $value      unfiltered value
+     * @return    mixed                 filtered value
      */
     public function filter($value)
     {

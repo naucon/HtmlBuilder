@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Html Div Class
  *
@@ -29,9 +27,9 @@ class HtmlDiv extends HtmlElementUniversalAbstract
     /**
      * Constructor
      *
-     * @param       string                  html element content
+     * @param       string      $content    html element content
      */
-    public function __construct($content=null)
+    public function __construct($content = null)
     {
         $this->setContent($content);
     }

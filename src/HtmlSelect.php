@@ -9,9 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-use Naucon\HtmlBuilder\HtmlSelectOption;
-
 /**
  * Html Select Class
  *
@@ -30,10 +27,10 @@ class HtmlSelect extends HtmlElementUniversalAbstract
     /**
      * Constructor
      *
-     * @param       string                  select attribute name
-     * @param       bool                    select attribute multiple
+     * @param       string      $name       select attribute name
+     * @param       bool        $multiple   select attribute multiple
      */
-    public function __construct($name, $multiple=false)
+    public function __construct($name, $multiple = false)
     {
         $this->setName($name);
         $this->setMultiple($multiple);
@@ -49,7 +46,7 @@ class HtmlSelect extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute name
+     * @param       string      $name       html element attribute name
      * @return      HtmlSelect
      */
     public function setName($name)
@@ -70,7 +67,7 @@ class HtmlSelect extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute multiple
+     * @param       bool        $multiple   html element attribute multiple
      * @return      HtmlSelect
      */
     public function setMultiple($multiple)
@@ -99,7 +96,7 @@ class HtmlSelect extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute autocomplete
+     * @param       bool    $autocomplete   html element attribute autocomplete
      * @return      HtmlSelect
      */
     public function setAutoComplete($autocomplete = true)
@@ -123,7 +120,7 @@ class HtmlSelect extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       int                     html element attribute tabindex
+     * @param       int     $tabIndex       html element attribute tabindex
      * @return      HtmlSelect
      */
     public function setTabIndex($tabIndex)
@@ -144,7 +141,7 @@ class HtmlSelect extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute disabled
+     * @param       bool        $disabled   html element attribute disabled
      * @return      HtmlSelect
      */
     public function setDisabled($disabled)
@@ -166,7 +163,7 @@ class HtmlSelect extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onblur
+     * @param       string      $event      html element attribute onblur
      * @return      HtmlSelect
      */
     public function setOnBlur($event)
@@ -184,7 +181,7 @@ class HtmlSelect extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onchange
+     * @param       string      $event      html element attribute onchange
      * @return      HtmlSelect
      */
     public function setOnChange($event)
@@ -202,7 +199,7 @@ class HtmlSelect extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onfocus
+     * @param       string      $event      html element attribute onfocus
      * @return      HtmlSelect
      */
     public function setOnFocus($event)
@@ -214,9 +211,9 @@ class HtmlSelect extends HtmlElementUniversalAbstract
     /**
      * add select option
      *
-     * @param       string                  select option content
-     * @param       string                  select option attribute value
-     * @param       bool                    select option attribute selected
+     * @param       string      $content    select option content
+     * @param       string      $value      select option attribute value
+     * @param       bool        $selected   select option attribute selected
      * @return      HtmlSelect
      */
     public function addOption($content, $value = null, $selected = false)

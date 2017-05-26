@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlTableCellAbstract;
-
 /**
  * Html Table Header Class
  *
@@ -21,14 +19,14 @@ class HtmlTableHeader extends HtmlTableCellAbstract
 {
     /**
      * @access      protected
-     * @var         string                  html element tag
+     * @var         string                      html element tag
      */
     protected $tag = 'th';
 
     /**
      * Constructor
      *
-     * @param       string                  table header content
+     * @param       string      $content        table header content
      */
     public function __construct($content)
     {

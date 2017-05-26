@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Html Textarea Class
  *
@@ -29,8 +27,8 @@ class HtmlTextarea extends HtmlElementUniversalAbstract
     /**
      * Constructor
      *
-     * @param       string                  textarea attribute name
-     * @param       string                  textarea content
+     * @param       string      $name       textarea attribute name
+     * @param       string      $content    textarea content
      */
     public function __construct($name, $content)
     {
@@ -48,7 +46,7 @@ class HtmlTextarea extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute name
+     * @param       string      $name       html element attribute name
      * @return      HtmlTextarea
      */
     public function setName($name)
@@ -66,7 +64,7 @@ class HtmlTextarea extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       int                     html element attribute cols
+     * @param       int         $cols       html element attribute cols
      * @return      HtmlTextarea
      */
     public function setCols($cols)
@@ -84,7 +82,7 @@ class HtmlTextarea extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       int                     html element attribute rows
+     * @param       int         $rows       html element attribute rows
      * @return      HtmlTextarea
      */
     public function setRows($rows)
@@ -109,10 +107,10 @@ class HtmlTextarea extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute autocomplete
+     * @param       bool    $autocomplete       html element attribute autocomplete
      * @return      HtmlTextarea
      */
-    public function setAutoComplete($autocomplete=true)
+    public function setAutoComplete($autocomplete = true)
     {
         if (is_null($autocomplete)) {
             $this->setAttribute('autocomplete', null);
@@ -133,7 +131,7 @@ class HtmlTextarea extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       int                     html element attribute tabindex
+     * @param       int         $tabIndex   html element attribute tabindex
      * @return      HtmlTextarea
      */
     public function setTabIndex($tabIndex)
@@ -154,7 +152,7 @@ class HtmlTextarea extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute disabled
+     * @param       bool    $disabled       html element attribute disabled
      * @return      HtmlTextarea
      */
     public function setDisabled($disabled)
@@ -179,7 +177,7 @@ class HtmlTextarea extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       int                     html element attribute readonly
+     * @param       int         $readonly   html element attribute readonly
      * @return      HtmlTextarea
      */
     public function setReadonly($readonly)
@@ -201,7 +199,7 @@ class HtmlTextarea extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onblur
+     * @param       string      $event      html element attribute onblur
      * @return      HtmlTextarea
      */
     public function setOnBlur($event)
@@ -219,7 +217,7 @@ class HtmlTextarea extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onchange
+     * @param       string      $event      html element attribute onchange
      * @return      HtmlTextarea
      */
     public function setOnChange($event)
@@ -237,7 +235,7 @@ class HtmlTextarea extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onfocus
+     * @param       string      $event      html element attribute onfocus
      * @return      HtmlTextarea
      */
     public function setOnFocus($event)
@@ -255,7 +253,7 @@ class HtmlTextarea extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onselect
+     * @param       string      $event      html element attribute onselect
      * @return      HtmlTextarea
      */
     public function setOnSelect($event)

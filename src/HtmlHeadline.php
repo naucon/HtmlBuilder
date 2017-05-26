@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Html Headline Class
  *
@@ -35,10 +33,10 @@ class HtmlHeadline extends HtmlElementUniversalAbstract
     /**
      * Constructor
      *
-     * @param       string                  headline content
-     * @param       int                     headline level 1-6
+     * @param       string      $content    headline content
+     * @param       int         $level      headline level 1-6
      */
-    public function __construct($content, $level=1)
+    public function __construct($content, $level = 1)
     {
         $this->setLevel($level);
         $this->addContent($content);
@@ -54,7 +52,7 @@ class HtmlHeadline extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       int                     headline level 1-6
+     * @param       int         $level      headline level 1-6
      * @return      HtmlHeadline
      */
     public function setLevel($level)

@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementAbstract;
-
 /**
  * Html Title Class
  *
@@ -29,7 +27,7 @@ class HtmlTitle extends HtmlElementAbstract
     /**
      * Constructor
      *
-     * @param       string                  title content
+     * @param       string      $content    title content
      */
     public function __construct($content)
     {

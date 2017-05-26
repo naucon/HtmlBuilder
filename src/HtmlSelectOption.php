@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Html Select Class
  *
@@ -29,11 +27,11 @@ class HtmlSelectOption extends HtmlElementUniversalAbstract
     /**
      * Constructor
      *
-     * @param       string                  select option content
-     * @param       string                  select option attribute value
-     * @param       bool                    select option attribute selected
+     * @param       string      $content    select option content
+     * @param       string      $value      select option attribute value
+     * @param       bool        $selected   select option attribute selected
      */
-    public function __construct($content, $value=null, $selected=false)
+    public function __construct($content, $value = null, $selected = false)
     {
         $this->setContent($content);
         $this->setValue($value);
@@ -50,7 +48,7 @@ class HtmlSelectOption extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute value
+     * @param       string      $value      html element attribute value
      * @return      HtmlSelectOption
      */
     public function setValue($value)
@@ -71,7 +69,7 @@ class HtmlSelectOption extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute selected
+     * @param       bool        $selected   html element attribute selected
      * @return      HtmlSelectOption
      */
     public function setSelected($selected)
@@ -97,7 +95,7 @@ class HtmlSelectOption extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute disabled
+     * @param       bool        $disabled   html element attribute disabled
      * @return      HtmlSelectOption
      */
     public function setDisabled($disabled)

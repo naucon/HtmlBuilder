@@ -21,7 +21,7 @@ interface HtmlFilterInterface
 	 * filter
 	 *
 	 * @abstract
-	 * @param     mixed             unfiltered value
+	 * @param     mixed		$value	unfiltered value
 	 * @return    mixed             filtered value
 	 */
 	public function filter($value);

@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Html Fieldset Legend Class
  *
@@ -29,7 +27,7 @@ class HtmlFieldsetLegend extends HtmlElementUniversalAbstract
     /**
      * Constructor
      *
-     * @param       string                  fieldset legend content
+     * @param       string      $content        fieldset legend content
      */
     public function __construct($content)
     {

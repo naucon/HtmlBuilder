@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Html Button Class
  *
@@ -29,12 +27,12 @@ class HtmlButton extends HtmlElementUniversalAbstract
     /**
      * Constructor
      *
-     * @param       string                  html element attribute type e.g. button, submit, reset
-     * @param       string                  html element attribute name
-     * @param       string                  html element attribute value
-     * @param       string                  html element content
+     * @param       string      $type       html element attribute type e.g. button, submit, reset
+     * @param       string      $name       html element attribute name
+     * @param       string      $value      html element attribute value
+     * @param       string      $content    html element content
      */
-    public function __construct($type=null, $name=null, $value=null, $content=null)
+    public function __construct($type = null, $name = null, $value = null, $content = null)
     {
         $this->setType($type);
         $this->setName($name);
@@ -53,7 +51,7 @@ class HtmlButton extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute type
+     * @param       string      $type       html element attribute type
      * @return      HtmlButton
      */
     public function setType($type)
@@ -71,7 +69,7 @@ class HtmlButton extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute name
+     * @param       string      $name       html element attribute name
      * @return      HtmlButton
      */
     public function setName($name)
@@ -89,7 +87,7 @@ class HtmlButton extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute value
+     * @param       string      $value      html element attribute value
      * @return      HtmlButton
      */
     public function setValue($value)
@@ -107,7 +105,7 @@ class HtmlButton extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       int                     html element attribute tabindex
+     * @param       int     $tabIndex       html element attribute tabindex
      * @return      HtmlButton
      */
     public function setTabIndex($tabIndex)
@@ -128,7 +126,7 @@ class HtmlButton extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       bool                    html element attribute disabled
+     * @param       bool    $disabled       html element attribute disabled
      * @return      HtmlButton
      */
     public function setDisabled($disabled)
@@ -150,7 +148,7 @@ class HtmlButton extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onblur
+     * @param       string      $event      html element attribute onblur
      * @return      HtmlButton
      */
     public function setOnBlur($event)
@@ -168,7 +166,7 @@ class HtmlButton extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute onfocus
+     * @param       string      $event      html element attribute onfocus
      * @return      HtmlButton
      */
     public function setOnFocus($event)

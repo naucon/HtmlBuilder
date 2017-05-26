@@ -9,9 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlTableRowAbstract;
-use Naucon\HtmlBuilder\HtmlTableCellAbstract;
-
 /**
  * Html Table Row Class
  *
@@ -37,7 +34,7 @@ class HtmlTableRow extends HtmlTableRowAbstract
     /**
      * add table cell
      *
-     * @param       HtmlTableCellAbstract
+     * @param       HtmlTableCellAbstract       $tableCell
      * @return      HtmlTableRow
      */
     public function addCell(HtmlTableCellAbstract $tableCell)
@@ -49,7 +46,7 @@ class HtmlTableRow extends HtmlTableRowAbstract
     /**
      * add table data cell
      *
-     * @param       string
+     * @param       string      $content
      * @return      HtmlTableRow
      */
     public function addData($content)
@@ -61,7 +58,7 @@ class HtmlTableRow extends HtmlTableRowAbstract
     /**
      * add table header cell
      *
-     * @param       string
+     * @param       string      $content
      * @return      HtmlTableRow
      */
     public function addHeader($content)

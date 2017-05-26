@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlInputAbstract;
-
 /**
  * Html Input Password Class
  *
@@ -22,14 +20,13 @@ class HtmlInputPassword extends HtmlInputText
     /**
      * Constructor
      *
-     * @param       string                  input name
-     * @param       string                  input value
+     * @param       string      $name       input name
+     * @param       string      $value      input value
      */
     public function __construct($name, $value)
     {
-        $this->setType('password');
+        parent::__construct($name, $value);
 
-        $this->setName($name);
-        $this->setValue($value);
+        $this->setType('password');
     }
 }

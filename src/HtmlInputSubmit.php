@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlInputAbstract;
-
 /**
  * Html Input Submit Class
  *
@@ -22,10 +20,10 @@ class HtmlInputSubmit extends HtmlInputAbstract
     /**
      * Constructor
      *
-     * @param       string                  input value
-     * @param       string                  input name
+     * @param       string      $value      input value
+     * @param       string      $name       input name
      */
-    public function __construct($value, $name=null)
+    public function __construct($value, $name = null)
     {
         $this->setType('submit');
 

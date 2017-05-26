@@ -9,10 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementInterface;
-use Naucon\HtmlBuilder\HtmlElementContent;
-use Naucon\HtmlBuilder\Exception\HtmlElementException;
-use Naucon\HtmlBuilder\HtmlBuilder;
 use Naucon\Utility\Map;
 use Naucon\Utility\Collection;
 
@@ -100,7 +96,7 @@ abstract class HtmlElementAbstract implements HtmlElementInterface
     }
 
     /**
-     * @param       array                   html element attributes with key-value-pairs
+     * @param       array   $attributes     html element attributes with key-value-pairs
      * @return      HtmlElementAbstract
      */
     public function setAttributes(array $attributes)
@@ -110,7 +106,7 @@ abstract class HtmlElementAbstract implements HtmlElementInterface
     }
 
     /**
-     * @param       string                  html element attribute key
+     * @param       string      $key        html element attribute key
      * @return      string                  html element attribute value
      */
     public function getAttribute($key)
@@ -119,7 +115,7 @@ abstract class HtmlElementAbstract implements HtmlElementInterface
     }
 
     /**
-     * @param       string                  html element attribute key
+     * @param       string      $key        html element attribute key
      * @return      bool                    html element has attribute for given key
      */
     public function hasAttribute($key)
@@ -130,11 +126,11 @@ abstract class HtmlElementAbstract implements HtmlElementInterface
     /**
      * set attribute to html element
      *
-     * @param       string                  html element attribute key
-     * @param       string                  html element attribute value
+     * @param       string      $key        html element attribute key
+     * @param       string      $value      html element attribute value
      * @return      HtmlElementAbstract
      */
-    public function setAttribute($key, $value=null)
+    public function setAttribute($key, $value = null)
     {
         if (is_null($value)) {
             $this->getAttributeMap()->remove($key);
@@ -147,7 +143,7 @@ abstract class HtmlElementAbstract implements HtmlElementInterface
     /**
      * remove attribute of html element
      *
-     * @param       string                  html element attribute key
+     * @param       string      $key        html element attribute key
      * @return      HtmlElementAbstract
      */
     public function removeAttribute($key)
@@ -159,9 +155,9 @@ abstract class HtmlElementAbstract implements HtmlElementInterface
     /**
      * append attribute to html element
      *
-     * @param       string                  html element attribute key
-     * @param       string                  html element attribute value
-     * @param       string                  html element attribute seperater
+     * @param       string      $key        html element attribute key
+     * @param       string      $value      html element attribute value
+     * @param       string      $seperater  html element attribute seperater
      * @return      HtmlElementAbstract
      */
     public function appendAttribute($key, $value = null, $seperater = null)
@@ -216,7 +212,7 @@ abstract class HtmlElementAbstract implements HtmlElementInterface
     }
 
     /**
-     * @param       array                   html child elements
+     * @param       array       $elements   html child elements
      * @return      HtmlElementAbstract
      */
     public function setChildElements(array $elements)
@@ -229,7 +225,7 @@ abstract class HtmlElementAbstract implements HtmlElementInterface
     /**
      * add html element as child element
      *
-     * @param       HtmlElementInterface
+     * @param       HtmlElementInterface        $element
      * @return      HtmlElementAbstract
      */
     public function addChildElement(HtmlElementInterface $element)
@@ -241,7 +237,7 @@ abstract class HtmlElementAbstract implements HtmlElementInterface
     /**
      * set html element content, replace all child elements
      *
-     * @param       string                  html element content
+     * @param       string      $content        html element content
      * @return      HtmlElementAbstract
      */
     public function setContent($content)
@@ -261,10 +257,10 @@ abstract class HtmlElementAbstract implements HtmlElementInterface
     /**
      * add html element content
      *
-     * @param       string                  html element content
+     * @param       string      $content        html element content
      * @return      HtmlElementAbstract
      */
-    public function addContent($content=null)
+    public function addContent($content = null)
     {
         if (!is_null($content)) {
             $htmlElementObject = new HtmlElementContent($content);

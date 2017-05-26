@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlElementUniversalAbstract;
-
 /**
  * Html Image Class
  *
@@ -29,10 +27,10 @@ class HtmlImage extends HtmlElementUniversalAbstract
     /**
      * Constructor
      *
-     * @param       string                  image source uri
-     * @param       string                  image alternative text
+     * @param       string      $src        image source uri
+     * @param       string      $alt        image alternative text
      */
-    public function __construct($src, $alt=null)
+    public function __construct($src, $alt = null)
     {
         $this->setSrc($src);
         $this->setAlt($alt);
@@ -48,7 +46,7 @@ class HtmlImage extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute src
+     * @param       string      $src        html element attribute src
      * @return      HtmlImage
      */
     public function setSrc($src)
@@ -66,7 +64,7 @@ class HtmlImage extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute alt
+     * @param       string      $alt        html element attribute alt
      * @return      HtmlImage
      */
     public function setAlt($alt)
@@ -84,7 +82,7 @@ class HtmlImage extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute width
+     * @param       string      $width      html element attribute width
      * @return      HtmlImage
      */
     public function setWidth($width)
@@ -106,7 +104,7 @@ class HtmlImage extends HtmlElementUniversalAbstract
     }
 
     /**
-     * @param       string                  html element attribute height
+     * @param       string      $height     html element attribute height
      * @return      HtmlImage
      */
     public function setHeight($height)

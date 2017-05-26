@@ -9,8 +9,6 @@
  */
 namespace Naucon\HtmlBuilder;
 
-use Naucon\HtmlBuilder\HtmlMetaAbstract;
-
 /**
  * Html Meta Description Class
  *
@@ -22,7 +20,7 @@ class HtmlMetaDescription extends HtmlMetaAbstract
     /**
      * Constructor
      *
-     * @param       string                  meta content
+     * @param       string      $content        meta content
      */
     public function __construct($content)
     {
