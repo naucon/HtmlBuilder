@@ -56,7 +56,7 @@ class HtmlBuilder
                 if (in_array($key, $this->_nonFilteredAttributes)) {
                     $attributes[] = $key . '="' . $value . '"';
                 } else {
-                    $value = filter_var($value, FILTER_SANITIZE_STRING, FILTER_FLAG_ENCODE_AMP + FILTER_FLAG_ENCODE_HIGH);
+                    $value = filter_var($value, FILTER_SANITIZE_STRING, FILTER_FLAG_ENCODE_AMP);
                     $attributes[] = $key . '="' . $value . '"';
                 }
             }
