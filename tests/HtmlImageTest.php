@@ -90,4 +90,26 @@ class HtmlImageTest extends \PHPUnit_Framework_TestCase
         $htmlElementObject->setClass('testClass');
         $this->assertEquals('<img src="' . $src . '" class="testClass" />', $htmlBuilder->render($htmlElementObject));
     }
+
+    public function testSetLoading()
+    {
+        $htmlBuilder = new HtmlBuilder();
+
+        $src = 'foo.png';
+
+        $htmlElementObject = new HtmlImage($src);
+        $htmlElementObject->setLoading('eager');
+        $this->assertEquals('<img src="' . $src . '" loading="eager" />', $htmlBuilder->render($htmlElementObject));
+    }
+
+    public function testSetLoadingWithWrongValue()
+    {
+        $htmlBuilder = new HtmlBuilder();
+
+        $src = 'foo.png';
+
+        $htmlElementObject = new HtmlImage($src);
+        $htmlElementObject->setLoading('xyz');
+        $this->assertEquals('<img src="' . $src . ' />', $htmlBuilder->render($htmlElementObject));
+    }
 }

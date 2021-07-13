@@ -166,7 +166,7 @@ Instances of `HtmlElementUniversalAbstract`, such as achor, break, button, div, 
 
 `getId()`, `setId($id)`, `getClass()`, `setClass($class)`, `getStyle()`, `setStyle($style)`, `getTitle()`, `setTitle($title)`, `getOnClick()`, `setOnClick($event)`, `getOnDoubleClick()`, `setOnDoubleClick($event)`, `getOnMouseDown()`, `setOnMouseDown($event)`, `getOnMouseUp()`, `setOnMouseUp($event)`, `getOnMouseOver()`, `setOnMouseOver($event)`, `getOnMouseMove()`, `setOnMouseMove($event)`, `getOnMouseOut()`, `setOnMouseOut($event)`, `getOnKeyPress()`, `setOnKeyPress($event)`, `getOnKeyDown()`, `setOnKeyDown($event)`, `getOnKeyUp()`, `setOnKeyUp($event)`
 
-Some html elements also have special getter-/setter-methodes to access and modify attributes. For Example anchor (href, target, name, onblur, onfocus), button (type, name, value, tabindex, disabled, onblur, onfocus), image (src, alt, width, height), meta (name), label (for), form (action, method, target, enctype, autocomplete, onreset, onsubmit), input (type, name, disabled, readonly, onblur, onchange, onfocus).
+Some html elements also have special getter-/setter-methodes to access and modify attributes. For Example anchor (href, target, name, onblur, onfocus), button (type, name, value, tabindex, disabled, onblur, onfocus), image (src, alt, width, height, loading), meta (name), label (for), form (action, method, target, enctype, autocomplete, onreset, onsubmit), input (type, name, disabled, readonly, onblur, onchange, onfocus).
 
 
 ### Nested elements
