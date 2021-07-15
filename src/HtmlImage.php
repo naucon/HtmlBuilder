@@ -116,4 +116,27 @@ class HtmlImage extends HtmlElementUniversalAbstract
         }
         return $this;
     }
+
+    /**
+     * @return string
+     */
+    public function getLoading()
+    {
+        return $this->getAttribute('loading');
+    }
+
+    /**
+     * @param string $loading
+     * @return HtmlImage
+     */
+    public function setLoading($loading)
+    {
+        if ($loading === 'eager' || $loading === 'lazy') {
+            $this->setAttribute('loading', $loading);
+        } else {
+            $this->setAttribute('loading', null);
+        }
+
+        return $this;
+    }
 }
